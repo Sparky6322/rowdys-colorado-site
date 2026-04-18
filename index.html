@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Rowdy's Mountain Chalet | Black Hawk Colorado Cabin Rental | Near Denver</title>
+  <meta name="description" content="Rowdy's Colorado Mountain Chalet — a peaceful mountain getaway near Black Hawk, CO with panoramic views, high-speed WiFi, and access to skiing, Golden Gate Canyon State Park, and Rocky Mountain National Park. Short-term and extended stays welcome." />
+  <meta name="keywords" content="Rowdys Colorado, Rowdy's Mountain Chalet, Black Hawk chalet, Black Hawk Colorado cabin rental, mountain cabin near Denver, Colorado mountain getaway, chalet near Golden Gate Canyon, ski cabin Colorado, extended stay mountain rental, remote work Colorado mountain, digital nomad Colorado cabin" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.rowdyscolorado.com/" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="Rowdy's Mountain Chalet | Black Hawk, Colorado" />
+  <meta property="og:description" content="A peaceful Colorado mountain getaway with panoramic views, high-speed WiFi, and easy access to skiing, state parks, and Rocky Mountain National Park." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.rowdyscolorado.com/" />
+
+  <!-- Structured Data: Vacation Rental -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Rowdy's Mountain Chalet",
+    "alternateName": ["Rowdys Colorado", "Black Hawk Chalet", "Rowdy's Colorado"],
+    "description": "A peaceful mountain getaway near Black Hawk, Colorado featuring panoramic mountain views, high-speed internet, full amenities, and access to skiing, Golden Gate Canyon State Park, and Rocky Mountain National Park. Available for short-term and extended stays.",
+    "url": "https://www.rowdyscolorado.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Black Hawk",
+      "addressRegion": "CO",
+      "addressCountry": "US"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "High-Speed WiFi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Mountain Views", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Full Kitchen", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Smart TV", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Wood-burning stove", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Private deck", "value": true }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Karla:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pine: #2C3B2D;
+      --pine-light: #3D5240;
+      --stone: #8B7D6B;
+      --snow: #F5F2EC;
+      --cream: #EDE8DF;
+      --bark: #5C4A35;
+      --mist: #C9D4C5;
+      --accent: #B8860B;
+      --text: #1E1E1E;
+      --text-muted: #6B6057;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      font-weight: 300;
+      background: var(--snow);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2.5rem;
+      background: rgba(44, 59, 45, 0.92);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--snow);
+      letter-spacing: 0.03em;
+      text-decoration: none;
+    }
+
+    .nav-book {
+      font-family: 'Karla', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--snow);
+      text-decoration: none;
+      border: 1px solid rgba(245,242,236,0.4);
+      padding: 0.5rem 1.25rem;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-book:hover {
+      background: var(--snow);
+      color: var(--pine);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 4rem 2.5rem;
+      position: relative;
+      background: var(--pine);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        #2C3B2D 0%,
+        #1a2b1b 40%,
+        #0f1a10 100%
+      );
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        45deg,
+        var(--snow) 0px,
+        var(--snow) 1px,
+        transparent 1px,
+        transparent 60px
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mist);
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 400;
+      color: var(--snow);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--mist);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: rgba(245,242,236,0.75);
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.8s forwards;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--snow);
+      color: var(--pine);
+      font-family: 'Karla', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover { background: var(--cream); }
+
+    .btn-secondary {
+      display: inline-block;
+      color: var(--snow);
+      font-family: 'Karla', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      border: 1px solid rgba(245,242,236,0.35);
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover { background: rgba(245,242,236,0.08); }
+
+    .hero-meta {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      z-index: 2;
+      text-align: right;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1s forwards;
+    }
+
+    .hero-meta-item {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.45);
+      line-height: 2;
+    }
+
+    .hero-meta-value {
+      color: rgba(245,242,236,0.75);
+      font-weight: 500;
+    }
+
+    /* STRIP */
+    .location-strip {
+      background: var(--pine-light);
+      padding: 1rem 2.5rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .location-strip-item {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mist);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .location-strip-item::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* SECTIONS */
+    section { padding: 5rem 2.5rem; }
+
+    .section-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--stone);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 400;
+      color: var(--pine);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-body {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      line-height: 1.8;
+    }
+
+    /* FEATURES GRID */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5px;
+      background: var(--cream);
+      border: 1.5px solid var(--cream);
+      margin-top: 3rem;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .feature-card {
+      background: var(--snow);
+      padding: 2rem 1.75rem;
+    }
+
+    .feature-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .feature-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--pine);
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ACTIVITIES */
+    .activities-section { background: var(--cream); }
+
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .activity-item {
+      padding: 1.5rem;
+      background: var(--snow);
+      border-radius: 2px;
+      border-left: 3px solid var(--pine);
+    }
+
+    .activity-name {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--pine);
+      margin-bottom: 0.25rem;
+    }
+
+    .activity-distance {
+      font-size: 0.8rem;
+      color: var(--stone);
+    }
+
+    /* STAY OPTIONS */
+    .stays-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 640px) {
+      .stays-grid { grid-template-columns: 1fr; }
+    }
+
+    .stay-card {
+      border: 1.5px solid var(--cream);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stay-card.featured {
+      background: var(--pine);
+      border-color: var(--pine);
+    }
+
+    .stay-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
+      background: var(--cream);
+      color: var(--pine);
+    }
+
+    .stay-card.featured .stay-badge {
+      background: rgba(245,242,236,0.15);
+      color: var(--mist);
+    }
+
+    .stay-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--pine);
+      margin-bottom: 0.75rem;
+    }
+
+    .stay-card.featured .stay-title { color: var(--snow); }
+
+    .stay-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .stay-card.featured .stay-desc { color: rgba(245,242,236,0.7); }
+
+    .stay-link {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--pine);
+      border-bottom: 1px solid var(--pine);
+      padding-bottom: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .stay-card.featured .stay-link {
+      color: var(--snow);
+      border-color: rgba(245,242,236,0.4);
+    }
+
+    .stay-link:hover { opacity: 0.7; }
+
+    /* REVIEWS */
+    .reviews-section { background: var(--pine); }
+
+    .reviews-section .section-title { color: var(--snow); }
+    .reviews-section .section-label { color: var(--mist); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .review-card {
+      background: rgba(245,242,236,0.06);
+      border: 1px solid rgba(245,242,236,0.1);
+      border-radius: 4px;
+      padding: 1.75rem;
+    }
+
+    .review-stars {
+      color: var(--accent);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .review-text {
+      font-size: 0.9rem;
+      color: rgba(245,242,236,0.75);
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 1.25rem;
+    }
+
+    .review-author {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mist);
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      background: var(--cream);
+    }
+
+    .cta-section .section-title { margin: 0 auto 1rem; }
+    .cta-section .section-body { margin: 0 auto 2.5rem; text-align: center; }
+
+    .cta-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-dark {
+      display: inline-block;
+      background: var(--pine);
+      color: var(--snow);
+      font-family: 'Karla', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-dark:hover { background: var(--pine-light); }
+
+    .btn-outline-dark {
+      display: inline-block;
+      color: var(--pine);
+      font-family: 'Karla', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      border: 1.5px solid var(--pine);
+      transition: all 0.2s ease;
+    }
+
+    .btn-outline-dark:hover { background: var(--pine); color: var(--snow); }
+
+    /* FOOTER */
+    footer {
+      background: var(--text);
+      padding: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: gap;
+      gap: 1rem;
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--snow);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-link {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.45);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover { color: var(--snow); }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(245,242,236,0.3);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      section { padding: 3.5rem 1.25rem; }
+      .hero { padding: 2rem 1.25rem 3rem; }
+      .hero-meta { display: none; }
+      .location-strip { padding: 1rem 1.25rem; gap: 1rem; }
+      footer { flex-direction: column; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-brand">Rowdy's Colorado</a>
+    <a href="https://book.rowdyscolorado.com" class="nav-book" rel="noopener">Book Direct</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Black Hawk, Colorado &nbsp;·&nbsp; 9,200 ft elevation</p>
+      <h1 class="hero-title">
+        A mountain <em>escape</em><br>made for every season
+      </h1>
+      <p class="hero-sub">
+        Rowdy's Mountain Chalet is a peaceful Colorado getaway with panoramic views, thoughtful amenities, and access to some of the state's best outdoor adventures — 45 minutes from Denver.
+      </p>
+      <div class="hero-actions">
+        <a href="https://book.rowdyscolorado.com" class="btn-primary" rel="noopener">Book Your Stay</a>
+        <a href="#stays" class="btn-secondary">Extended Stays</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <p class="hero-meta-item">Elevation <span class="hero-meta-value">9,200 ft</span></p>
+      <p class="hero-meta-item">Property <span class="hero-meta-value">1.5 acres</span></p>
+      <p class="hero-meta-item">From Denver <span class="hero-meta-value">&lt; 1 hour</span></p>
+    </div>
+  </section>
+
+  <!-- LOCATION STRIP -->
+  <div class="location-strip" role="complementary" aria-label="Nearby attractions">
+    <span class="location-strip-item">10 min to Golden Gate Canyon State Park</span>
+    <span class="location-strip-item">10 min to Black Hawk Casinos</span>
+    <span class="location-strip-item">20 miles to Eldora Ski Resort</span>
+    <span class="location-strip-item">30 miles to Boulder</span>
+    <span class="location-strip-item">&lt;1 hr to Rocky Mountain National Park</span>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label">The chalet</p>
+      <h2 class="section-title">Peaceful. Private. <br>Fully equipped.</h2>
+      <p class="section-body">
+        Rowdy's Colorado Mountain Chalet sits on 1.5 private acres at 9,200 feet in the Black Hawk foothills — far enough from the city to truly unwind, close enough to everything Colorado has to offer. Whether you're here for a weekend ski trip, a remote work retreat, or an extended mountain stay, the chalet is maintained to a high standard with everything you need from day one.
+      </p>
+      <div class="features-grid" role="list">
+        <div class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">🏔</span>
+          <p class="feature-title">Panoramic Mountain Views</p>
+          <p class="feature-desc">Sweeping views from the main living area and private deck. The kind of scenery that makes you forget your phone exists.</p>
+        </div>
+        <div class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">⚡</span>
+          <p class="feature-title">100 Mbps High-Speed WiFi</p>
+          <p class="feature-desc">Reliable internet fast enough for video calls, streaming, and remote work — a rarity at mountain elevation.</p>
+        </div>
+        <div class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">🪵</span>
+          <p class="feature-title">Cozy Mountain Interiors</p>
+          <p class="feature-desc">Wood-burning stove, gas fireplace, spacious living room with seating for 5, and a fully stocked kitchen for home-cooked meals.</p>
+        </div>
+        <div class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">🔑</span>
+          <p class="feature-title">Self Check-In</p>
+          <p class="feature-desc">Smart lock access with automated check-in instructions. Arrive on your schedule without coordinating with anyone.</p>
+        </div>
+        <div class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">🛏</span>
+          <p class="feature-title">Sleeps Up to 6</p>
+          <p class="feature-desc">One private queen bedroom plus a spacious loft with two queen beds. Linens, towels, and essentials all included.</p>
+        </div>
+        <div class="feature-card" role="listitem">
+          <span class="feature-icon" aria-hidden="true">🌲</span>
+          <p class="feature-title">1.5 Acres of Privacy</p>
+          <p class="feature-desc">Set in a quiet residential mountain neighborhood. Outdoor deck, picnic table, swing, and a wood fort for families.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section class="activities-section" id="explore">
+    <div class="section-inner">
+      <p class="section-label">Explore the area</p>
+      <h2 class="section-title">Central to everything <br>Colorado does best.</h2>
+      <p class="section-body">
+        The Black Hawk chalet sits at the crossroads of Colorado's best outdoor recreation. Skiing, hiking, fishing, and casino entertainment are all within easy reach — and Denver is less than an hour away when you want city access.
+      </p>
+      <div class="activities-grid" role="list">
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Eldora Mountain Ski Resort</p>
+          <p class="activity-distance">20 miles · ~30 min</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Golden Gate Canyon State Park</p>
+          <p class="activity-distance">10 min drive</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Rocky Mountain National Park</p>
+          <p class="activity-distance">&lt; 1 hour drive</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Echo Mountain Ski Resort</p>
+          <p class="activity-distance">30 miles · ~45 min</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Loveland Ski Resort</p>
+          <p class="activity-distance">&lt; 1 hour drive</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Kriley Pond Trout Fishing</p>
+          <p class="activity-distance">15 min drive</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Black Hawk &amp; Central City Casinos</p>
+          <p class="activity-distance">10 min drive</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Boulder &amp; Nederland</p>
+          <p class="activity-distance">30 miles · ~45 min</p>
+        </div>
+        <div class="activity-item" role="listitem">
+          <p class="activity-name">Denver</p>
+          <p class="activity-distance">&lt; 1 hour drive</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAY OPTIONS -->
+  <section id="stays">
+    <div class="section-inner">
+      <p class="section-label">Stay options</p>
+      <h2 class="section-title">Weekend escape or <br>extended mountain retreat.</h2>
+      <p class="section-body">
+        Rowdy's Mountain Chalet accommodates both short-term guests and those looking for an extended stay. Whether it's a weekend ski trip or a few months of remote work in the mountains, book direct for the best rate.
+      </p>
+      <div class="stays-grid">
+        <div class="stay-card">
+          <span class="stay-badge">Short-term stay</span>
+          <h3 class="stay-title">Weekend &amp; Weekly Getaways</h3>
+          <p class="stay-desc">
+            Perfect for ski trips, family escapes, or a long weekend in the mountains. Flexible dates, self check-in, and everything you need from arrival. Available on Airbnb, VRBO, and directly through our booking site.
+          </p>
+          <a href="https://book.rowdyscolorado.com" class="stay-link" rel="noopener">Check availability →</a>
+        </div>
+        <div class="stay-card featured">
+          <span class="stay-badge">Extended stay</span>
+          <h3 class="stay-title">Monthly Mountain Retreats</h3>
+          <p class="stay-desc">
+            Rowdy's Colorado is an ideal base for remote workers and digital nomads seeking a quiet, fully furnished mountain retreat for 30–180 days. High-speed WiFi, a full kitchen, and peaceful surroundings make deep work easy.
+          </p>
+          <a href="https://book.rowdyscolorado.com" class="stay-link" rel="noopener">Inquire about extended stays →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews-section" id="reviews">
+    <div class="section-inner">
+      <p class="section-label">Guest reviews</p>
+      <h2 class="section-title">What guests say about <br>Rowdy's Mountain Chalet.</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">"One of our favorite Airbnbs we've stayed at in America. Very private location with awesome views — definitely recommend a 4WD vehicle when there's snow on the ground."</p>
+          <p class="review-author">Verified guest</p>
+        </div>
+        <div class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">"We felt very much away from it all but were less than an hour from friends and family in the Boulder/Denver area. Place was cozy and clean. Highly recommend."</p>
+          <p class="review-author">Verified guest</p>
+        </div>
+        <div class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-text">"The wood-burning stove was a favorite feature in the living area — even better with the host's huge supply of firewood. The area is peaceful. Overall a nice stay. We'd come back."</p>
+          <p class="review-author">Verified guest</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="section-inner">
+      <p class="section-label">Ready to book?</p>
+      <h2 class="section-title">Book direct and skip the OTA fees.</h2>
+      <p class="section-body">
+        Book directly through our site for the best available rate on your stay at Rowdy's Colorado Mountain Chalet near Black Hawk. Short-term and extended stays both welcome.
+      </p>
+      <div class="cta-actions">
+        <a href="https://book.rowdyscolorado.com" class="btn-dark" rel="noopener">Book Direct Now</a>
+        <a href="https://book.rowdyscolorado.com" class="btn-outline-dark" rel="noopener">View Availability</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-brand">Rowdy's Colorado</span>
+    <div class="footer-links">
+      <a href="https://book.rowdyscolorado.com" class="footer-link" rel="noopener">Book Direct</a>
+      <a href="#about" class="footer-link">The Chalet</a>
+      <a href="#explore" class="footer-link">Explore</a>
+      <a href="#stays" class="footer-link">Stay Options</a>
+    </div>
+    <span class="footer-copy">© 2026 Rowdy's Colorado. Black Hawk, CO.</span>
+  </footer>
+
+</body>
+</html>
