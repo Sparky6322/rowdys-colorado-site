@@ -9,7 +9,7 @@
   <meta name="description" content="Rowdy's Colorado Mountain Chalet — a peaceful mountain getaway near Black Hawk, CO with panoramic views, high-speed WiFi, and access to skiing, Golden Gate Canyon State Park, and Rocky Mountain National Park. Short-term and extended stays welcome." />
   <meta name="keywords" content="Rowdys Colorado, Rowdy's Mountain Chalet, Black Hawk chalet, Black Hawk Colorado cabin rental, mountain cabin near Denver, Colorado mountain getaway, chalet near Golden Gate Canyon, ski cabin Colorado, extended stay mountain rental, remote work Colorado mountain, digital nomad Colorado cabin" />
   <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="34UcwhDNzdAnD9vsmfeJSoUwdImdDo69bSmCNIZGXvI" />
+
   <link rel="canonical" href="https://www.rowdyscolorado.com/" />
 
   <!-- Open Graph (social sharing) -->
@@ -17,7 +17,8 @@
   <meta property="og:description" content="A peaceful Colorado mountain getaway with panoramic views, high-speed WiFi, and easy access to skiing, state parks, and Rocky Mountain National Park." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.rowdyscolorado.com/" />
-
+  <meta property="og:image" content="https://www.rowdyscolorado.com/hero.jpg" />
+  <meta name="google-site-verification" content="34UcwhDNzdAnD9vsmfeJSoUwdImdDo69bSmCNIZGXvI" />
   <!-- Structured Data: Vacation Rental -->
   <script type="application/ld+json">
   {
@@ -27,6 +28,11 @@
     "alternateName": ["Rowdys Colorado", "Black Hawk Chalet", "Rowdy's Colorado"],
     "description": "A peaceful mountain getaway near Black Hawk, Colorado featuring panoramic mountain views, high-speed internet, full amenities, and access to skiing, Golden Gate Canyon State Park, and Rocky Mountain National Park. Available for short-term and extended stays.",
     "url": "https://www.rowdyscolorado.com",
+    "image": "https://www.rowdyscolorado.com/hero.jpg",
+    "sameAs": [
+      "https://www.facebook.com/rowdyscolorado",
+      "https://www.instagram.com/rowdyscolorado"
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Black Hawk",
@@ -123,31 +129,26 @@
       justify-content: flex-end;
       padding: 4rem 2.5rem;
       position: relative;
-      background: var(--pine);
       overflow: hidden;
     }
 
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        160deg,
-        #2C3B2D 0%,
-        #1a2b1b 40%,
-        #0f1a10 100%
-      );
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
-    .hero-pattern {
+    .hero-overlay {
       position: absolute;
       inset: 0;
-      opacity: 0.04;
-      background-image: repeating-linear-gradient(
-        45deg,
-        var(--snow) 0px,
-        var(--snow) 1px,
-        transparent 1px,
-        transparent 60px
+      background: linear-gradient(
+        to top,
+        rgba(15, 26, 16, 0.85) 0%,
+        rgba(15, 26, 16, 0.4) 50%,
+        rgba(15, 26, 16, 0.15) 100%
       );
     }
 
@@ -187,7 +188,7 @@
     .hero-sub {
       font-size: 1.05rem;
       font-weight: 300;
-      color: rgba(245,242,236,0.75);
+      color: rgba(245,242,236,0.85);
       max-width: 520px;
       margin-bottom: 2.5rem;
       opacity: 0;
@@ -230,11 +231,11 @@
       text-decoration: none;
       padding: 0.9rem 2rem;
       border-radius: 2px;
-      border: 1px solid rgba(245,242,236,0.35);
+      border: 1px solid rgba(245,242,236,0.5);
       transition: all 0.2s ease;
     }
 
-    .btn-secondary:hover { background: rgba(245,242,236,0.08); }
+    .btn-secondary:hover { background: rgba(245,242,236,0.1); }
 
     .hero-meta {
       position: absolute;
@@ -250,12 +251,12 @@
       font-size: 0.72rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: rgba(245,242,236,0.45);
+      color: rgba(245,242,236,0.5);
       line-height: 2;
     }
 
     .hero-meta-value {
-      color: rgba(245,242,236,0.75);
+      color: rgba(245,242,236,0.85);
       font-weight: 500;
     }
 
@@ -360,8 +361,51 @@
       line-height: 1.6;
     }
 
+    /* PHOTO GALLERY */
+    .gallery-section { background: var(--cream); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 8px;
+      margin-top: 2.5rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 3px;
+      aspect-ratio: 4/3;
+      background: var(--stone);
+    }
+
+    .gallery-item.wide {
+      grid-column: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery-item.wide {
+        grid-column: span 2;
+      }
+    }
+
     /* ACTIVITIES */
-    .activities-section { background: var(--cream); }
+    .activities-section { background: var(--snow); }
 
     .activities-grid {
       display: grid;
@@ -372,7 +416,7 @@
 
     .activity-item {
       padding: 1.5rem;
-      background: var(--snow);
+      background: var(--cream);
       border-radius: 2px;
       border-left: 3px solid var(--pine);
     }
@@ -563,6 +607,32 @@
 
     .btn-outline-dark:hover { background: var(--pine); color: var(--snow); }
 
+    /* SOCIAL */
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--pine);
+      border: 1.5px solid var(--pine);
+      padding: 0.6rem 1.25rem;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .social-link:hover { background: var(--pine); color: var(--snow); }
+
     /* FOOTER */
     footer {
       background: var(--text);
@@ -570,7 +640,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: gap;
+      flex-wrap: wrap;
       gap: 1rem;
     }
 
@@ -583,6 +653,7 @@
     .footer-links {
       display: flex;
       gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
     .footer-link {
@@ -630,7 +701,7 @@
   <!-- HERO -->
   <section class="hero" aria-label="Hero">
     <div class="hero-bg"></div>
-    <div class="hero-pattern"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Black Hawk, Colorado &nbsp;·&nbsp; 9,200 ft elevation</p>
       <h1 class="hero-title">
@@ -698,6 +769,34 @@
           <span class="feature-icon" aria-hidden="true">🌲</span>
           <p class="feature-title">1.5 Acres of Privacy</p>
           <p class="feature-desc">Set in a quiet residential mountain neighborhood. Outdoor deck, picnic table, swing, and a wood fort for families.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-inner">
+      <p class="section-label">Inside the chalet</p>
+      <h2 class="section-title">Every corner of <br>your mountain home.</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item wide">
+          <img src="mountain-views.jpg" alt="Panoramic mountain views from Rowdy's Colorado chalet near Black Hawk" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="outdoor-deck.jpg" alt="Outdoor deck at Rowdy's Mountain Chalet, Black Hawk Colorado" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="living-room.jpg" alt="Cozy living room with fireplace at Rowdy's Colorado mountain cabin" loading="lazy" />
+        </div>
+        <div class="gallery-item wide">
+          <img src="dining-living-space.jpg" alt="Open dining and living space at Rowdy's Colorado chalet" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="kitchen.jpg" alt="Fully equipped kitchen at Rowdy's Mountain Chalet near Denver" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="loft-bedroom2.jpg" alt="Loft bedroom at Rowdy's Colorado mountain getaway" loading="lazy" />
         </div>
       </div>
     </div>
@@ -818,6 +917,10 @@
         <a href="https://book.rowdyscolorado.com" class="btn-dark" rel="noopener">Book Direct Now</a>
         <a href="https://book.rowdyscolorado.com" class="btn-outline-dark" rel="noopener">View Availability</a>
       </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/rowdyscolorado" class="social-link" rel="noopener" target="_blank" aria-label="Rowdy's Colorado on Facebook">Facebook</a>
+        <a href="https://www.instagram.com/rowdyscolorado" class="social-link" rel="noopener" target="_blank" aria-label="Rowdy's Colorado on Instagram">Instagram</a>
+      </div>
     </div>
   </section>
 
@@ -827,8 +930,11 @@
     <div class="footer-links">
       <a href="https://book.rowdyscolorado.com" class="footer-link" rel="noopener">Book Direct</a>
       <a href="#about" class="footer-link">The Chalet</a>
+      <a href="#gallery" class="footer-link">Photos</a>
       <a href="#explore" class="footer-link">Explore</a>
       <a href="#stays" class="footer-link">Stay Options</a>
+      <a href="https://www.instagram.com/rowdyscolorado" class="footer-link" rel="noopener" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/rowdyscolorado" class="footer-link" rel="noopener" target="_blank">Facebook</a>
     </div>
     <span class="footer-copy">© 2026 Rowdy's Colorado. Black Hawk, CO.</span>
   </footer>
